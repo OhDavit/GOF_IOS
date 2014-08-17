@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>19239834-3DB1-498A-BDD4-79321A9D3ED8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>DesignPattern</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7B58899A7E182E7EE889CF25F17C8BF621281D28</key>
+		<string>https://github.com/OhDavit/GOF_IOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>DesignPattern/DesignPattern.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7B58899A7E182E7EE889CF25F17C8BF621281D28</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/OhDavit/GOF_IOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7B58899A7E182E7EE889CF25F17C8BF621281D28</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7B58899A7E182E7EE889CF25F17C8BF621281D28</string>
+			<key>IDESourceControlWCCName</key>
+			<string>GOF_IOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>
