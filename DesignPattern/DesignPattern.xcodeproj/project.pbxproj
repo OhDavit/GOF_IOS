@@ -17,6 +17,9 @@
 		3758D31619A0E4A2004B89A1 /* Rectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3758D31519A0E4A2004B89A1 /* Rectangle.m */; };
 		3758D31C19A0E4E3004B89A1 /* ComplexShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 3758D31B19A0E4E3004B89A1 /* ComplexShape.m */; };
 		3758D31F19A0E501004B89A1 /* GraphicsEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3758D31E19A0E501004B89A1 /* GraphicsEditor.m */; };
+		37C5654E1C78A92800DFA9FB /* MoveViewCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 37C5654D1C78A92800DFA9FB /* MoveViewCommand.m */; };
+		37C565521C78AFF800DFA9FB /* HideCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 37C565511C78AFF800DFA9FB /* HideCommand.m */; };
+		37C565551C78B4FC00DFA9FB /* UndoRedo.m in Sources */ = {isa = PBXBuildFile; fileRef = 37C565541C78B4FC00DFA9FB /* UndoRedo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,13 @@
 		3758D31B19A0E4E3004B89A1 /* ComplexShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ComplexShape.m; path = DesignPattern/ComplexShape.m; sourceTree = SOURCE_ROOT; };
 		3758D31D19A0E501004B89A1 /* GraphicsEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GraphicsEditor.h; path = DesignPattern/GraphicsEditor.h; sourceTree = SOURCE_ROOT; };
 		3758D31E19A0E501004B89A1 /* GraphicsEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GraphicsEditor.m; path = DesignPattern/GraphicsEditor.m; sourceTree = SOURCE_ROOT; };
+		37C5654C1C78A92800DFA9FB /* MoveViewCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoveViewCommand.h; sourceTree = "<group>"; };
+		37C5654D1C78A92800DFA9FB /* MoveViewCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoveViewCommand.m; sourceTree = "<group>"; };
+		37C5654F1C78A94B00DFA9FB /* Command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Command.h; sourceTree = "<group>"; };
+		37C565501C78AFF800DFA9FB /* HideCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HideCommand.h; sourceTree = "<group>"; };
+		37C565511C78AFF800DFA9FB /* HideCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HideCommand.m; sourceTree = "<group>"; };
+		37C565531C78B4FC00DFA9FB /* UndoRedo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UndoRedo.h; sourceTree = "<group>"; };
+		37C565541C78B4FC00DFA9FB /* UndoRedo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UndoRedo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +102,7 @@
 		370640CC19A0D34E000A6666 /* DesignPattern */ = {
 			isa = PBXGroup;
 			children = (
+				37C5654A1C78803F00DFA9FB /* BehavioralPatterns */,
 				370640F019A0D3FC000A6666 /* StructuralPatterns */,
 				370640D119A0D34E000A6666 /* AppDelegate.h */,
 				370640D219A0D34E000A6666 /* AppDelegate.m */,
@@ -160,6 +171,28 @@
 			children = (
 			);
 			name = Decorator;
+			sourceTree = "<group>";
+		};
+		37C5654A1C78803F00DFA9FB /* BehavioralPatterns */ = {
+			isa = PBXGroup;
+			children = (
+				37C5654B1C78808D00DFA9FB /* Command */,
+			);
+			name = BehavioralPatterns;
+			sourceTree = "<group>";
+		};
+		37C5654B1C78808D00DFA9FB /* Command */ = {
+			isa = PBXGroup;
+			children = (
+				37C5654C1C78A92800DFA9FB /* MoveViewCommand.h */,
+				37C5654D1C78A92800DFA9FB /* MoveViewCommand.m */,
+				37C5654F1C78A94B00DFA9FB /* Command.h */,
+				37C565501C78AFF800DFA9FB /* HideCommand.h */,
+				37C565511C78AFF800DFA9FB /* HideCommand.m */,
+				37C565531C78B4FC00DFA9FB /* UndoRedo.h */,
+				37C565541C78B4FC00DFA9FB /* UndoRedo.m */,
+			);
+			name = Command;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,9 +294,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37C565521C78AFF800DFA9FB /* HideCommand.m in Sources */,
+				37C5654E1C78A92800DFA9FB /* MoveViewCommand.m in Sources */,
 				3758D31319A0E48C004B89A1 /* Line.m in Sources */,
 				3758D31C19A0E4E3004B89A1 /* ComplexShape.m in Sources */,
 				370640D619A0D34E000A6666 /* ViewController.m in Sources */,
+				37C565551C78B4FC00DFA9FB /* UndoRedo.m in Sources */,
 				3758D31F19A0E501004B89A1 /* GraphicsEditor.m in Sources */,
 				370640D319A0D34E000A6666 /* AppDelegate.m in Sources */,
 				370640D019A0D34E000A6666 /* main.m in Sources */,
